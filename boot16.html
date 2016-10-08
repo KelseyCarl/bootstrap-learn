@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>弹出框和警告框插件</title>
+    <style>
+        a:focus{outline: none;}
+        #view{
+            width: 300px;
+            height: 100px;
+            border:red solid 1px;
+        }
+    </style>
+</head>
+<body style="margin:200px">
+<!--data-viewport设置外围容器的边际-->
+<div id="view">
+    <button id="b" class="btn btn-danger btn-lg"
+            data-toggle="popover"
+            title="bootstrap"
+            data-content="Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Tw
+        itter的设计师Mark Otto和Jacob Thornton合作开发,是一个CSS/HTML框架。"
+            data-placement="right"
+            >点击弹出/隐藏</button>
+</div>
+
+<button id="btn">
+button
+</button>
+
+<!--data-dismiss="alert"-->
+<div id="alert" class="alert alert-warning fade in">
+    <button class="close"><span>&times;</span></button>
+    <p>您的浏览器不支持！</p>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('button').popover({
+        viewport:{
+            selector:'#view',
+            padding:10
+        }
+    });
+    $('#btn').on('click',function(){
+       $('#b').popover("toggle");
+    });
+    $('.close').on('click',function(){
+        $('#alert').alert('close');
+    });
+//    $('#alert').on('close.bs.alert',function(){
+//        alert("被调用执行");
+//    });
+    $('#alert').on('closed.bs.alert',function(){
+        alert("被完全执行后出现");
+    });
+</script>
+</body>
+</html>

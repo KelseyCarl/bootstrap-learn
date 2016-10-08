@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>按钮和折叠插件</title>
+    <style>
+        a:focus{outline: none;}
+        #view{
+            width: 300px;
+            height: 100px;
+            border:red solid 1px;
+        }
+    </style>
+</head>
+<body style="margin:200px">
+
+<!--<button class="btn btn-primary" data-toggle="button" autocomplete="off">button</button>-->
+
+<!--<div class="btn-group" data-toggle="buttons">-->
+    <!--<label for="" class="btn btn-primary active">-->
+        <!--<input type="radio" name="sex" value="男" checked>男-->
+    <!--</label>-->
+    <!--<label for="" class="btn btn-primary">-->
+        <!--<input type="radio" name="sex" value="女">女-->
+    <!--</label>-->
+<!--</div>-->
+
+<!--<div class="btn-group" data-toggle="buttons">-->
+    <!--<label for="" class="btn btn-primary active">-->
+        <!--<input type="checkbox" name="fa" value="体育" checked>体育-->
+    <!--</label>-->
+    <!--<label for="" class="btn btn-primary">-->
+        <!--<input type="checkbox" name="fa" value="音乐">音乐-->
+    <!--</label>-->
+    <!--<label for="" class="btn btn-primary">-->
+        <!--<input type="checkbox" name="fa" value="艺术">艺术-->
+    <!--</label>-->
+    <!--<label for="" class="btn btn-primary">-->
+        <!--<input type="checkbox" name="fa" value="电脑">电脑-->
+    <!--</label>-->
+<!--</div>-->
+
+
+<!--加载状态-->
+<!--<button id="btn" type="button" class="btn btn-success" data-loading-text="Load..." autocomplete="off">开始上传</button>-->
+<!--<button class="btn btn-primary" autocomplete="off">button</button>-->
+
+<!--折叠插件-->
+<!--<button class="btn btn-warning" data-toggle="collapse" data-target="#content">-->
+    <!--Bootstrap-->
+<!--</button>-->
+<!--<div class="collapse" id="content">-->
+    <!--<div class="well">-->
+        <!--Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和-->
+        <!--Jacob Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0 。-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--手风琴折叠-->
+
+<!--<div class="panel-group" id="accordion">-->
+    <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--<h4 class="panel-title">-->
+                <!--<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">第一部分标题</a>-->
+            <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapseOne" class="panel-collapse collapse">-->
+            <!--<div class="panel-body collapse in" >-->
+                <!--第一部分内容-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--<h4 class="panel-title">-->
+                <!--<a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion">第一部分标题</a>-->
+            <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapseTwo" class="panel-collapse collapse">-->
+            <!--<div class="panel-body collapse in" >-->
+                <!--第一部分内容-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--<h4 class="panel-title">-->
+                <!--<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">第一部分标题</a>-->
+            <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapseThree" class="panel-collapse collapse">-->
+            <!--<div class="panel-body collapse in" >-->
+                <!--第一部分内容-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="panel-group" id="accordion">-->
+    <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--<h4 class="panel-title">-->
+                <!--<a href="#collapseOne" data-toggle="collapse">第一部分标题</a>-->
+            <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapseOne" class="panel-collapse collapse">-->
+            <!--<div class="panel-body collapse in" >-->
+                <!--第一部分内容-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--<h4 class="panel-title">-->
+                <!--<a href="#collapseTwo" data-toggle="collapse">第一部分标题</a>-->
+            <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapseTwo" class="panel-collapse collapse">-->
+            <!--<div class="panel-body collapse in" >-->
+                <!--第一部分内容-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="panel panel-default">-->
+        <!--<div class="panel-heading">-->
+            <!--<h4 class="panel-title">-->
+                <!--<a href="#collapseThree" data-toggle="collapse">第一部分标题</a>-->
+            <!--</h4>-->
+        <!--</div>-->
+        <!--<div id="collapseThree" class="panel-collapse collapse">-->
+            <!--<div class="panel-body collapse in" >-->
+                <!--第一部分内容-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<button class="btn btn-warning"  data-target="#content">
+Bootstrap
+</button>
+<div class="collapse" id="content">
+<div class="well">
+Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和
+Jacob Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0 。
+</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+//    $('button').on('click',function(){
+//       var btn = $(this).button('loading');
+//        setTimeout(function(){
+//          btn.button('reset');
+//        },1000);
+//    });
+//    $('button').on('click',function(){
+//       $(this).button('toggle');
+//    });
+//    $('#collapseOne,#collapseTwo,#collapseThree').collapse({
+//        parent:'#accordion',
+//        toggle:'false'
+//    })
+    $('button').on('click',function(){
+        $('#content').collapse('toggle');
+//        $('#content').collapse({
+//            toggle:false
+//        })
+//        $('#content').collapse('show');
+    });
+//几个相应的事件
+//$('#content').on('show.bs.collapse',function(){
+//    alert("调用show方法是立即触发");
+//})
+//$('#content').on('shown.bs.collapse',function(){
+//    alert("折叠区完全显示出来的时候触发");
+//})
+//$('#content').on('hide.bs.collapse',function(){
+//    alert("调用hide方法是立即触发")
+//})
+$('#content').on('hidden.bs.collapse',function(){
+    alert("隐藏好了触发");
+})
+</script>
+</body>
+</html>

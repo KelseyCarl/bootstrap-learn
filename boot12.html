@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>模态框插件</title>
+</head>
+<body>
+<!--模态框声明-->
+<div class="modal fade" id="myModal" tabindex="-1">
+    <!--窗口声明-->
+    <div class="modal-dialog">
+        <!--内容声明-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4 class="modal-title">会员登录</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">1</div>
+                        <div class="col-md-4">2</div>
+                        <div class="col-md-4">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default">注册</button>
+                <button class="btn btn-info">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="btn btn-success" data-toggle="modal" data-target="#myModal">点击弹窗</button>
+<button class="btn btn-success" data-toggle="modal" data-target="#myModal" data-backdrop="false">点击弹窗</button>
+<button class="btn btn-success" data-toggle="modal" data-target="#myModal" data-keyboard="true">点击弹窗</button>
+<button class="btn btn-success" data-toggle="modal" href="boot10.html">点击弹窗</button>
+
+
+<!--用法，参数，方法，事件-->
+<!--<div class="modal fade" id="myModal" tabindex="-1">-->
+    <!--&lt;!&ndash;窗口声明&ndash;&gt;-->
+    <!--<div class="modal-dialog">-->
+        <!--&lt;!&ndash;内容声明&ndash;&gt;-->
+        <!--<div class="modal-content">-->
+            <!--<div class="modal-header">-->
+                <!--<button class="close"><span>&times;</span></button>-->
+                <!--<h4 class="modal-title">会员登录</h4>-->
+            <!--</div>-->
+            <!--<div class="modal-body">-->
+                <!--<div class="container-fluid">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-md-4">1</div>-->
+                        <!--<div class="col-md-4">2</div>-->
+                        <!--<div class="col-md-4">3</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="modal-footer">-->
+                <!--<button class="btn btn-default">注册</button>-->
+                <!--<button class="btn btn-info">登录</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<button class="btn btn-success" id="btn">点击弹窗</button>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $('#btn').on('click',function(){
+       $('#myModal').modal('show');
+    });
+//    $('#myModal').modal(
+//            {
+//                show:false
+//            }
+//    );
+//        $('#myModal').on('show.bs.modal',function(){
+//            alert('调用show方法立即触发');
+//        });
+</script>
+</body>
+</html>

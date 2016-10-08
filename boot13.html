@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>下拉菜单和滚动监听事件</title>
+</head>
+<body>
+<!--声明式用法-->
+<!---->
+<div class="dropdown" id="dropdown" data-toggle="dropdown" data-target="#dropdown">
+    <button class="btn btn-primary" id="btn">
+        下拉菜单
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">咨询</a></li>
+        <li><a href="#">产品</a></li>
+        <li><a href="#">关于</a></li>
+    </ul>
+</div>
+
+<!--滚动监听事件-->
+
+<nav id="nav1" class="navbar navbar-default">
+    <a href="#" class="navbar-brand">web开发</a>
+    <ul class="nav navbar-nav">
+        <li><a href="#html5">HTML5</a></li>
+        <li><a href="#bootstrap">Bootstrap</a></li>
+        <li class="dropdown">
+            <a href="#" data-toggle="dropdown">JavaScript<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#jQuery">jQuery</a></li>
+                <li><a href="#Yui">Yui</a></li>
+                <li><a href="#ExtJs">ExtJs</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<!--data-offset:默认值为10，固定内容距离滚动容器10像素以内，以高亮显示所对应的菜单；
+    data-spy="scroll"：设置scroll，将设置滚动容器监听；
+    data-target:设置#nav,绑定指定监听的菜单。
+    data-offset="0" data-spy="scroll" data-target="#nav1"-->
+<div id="content" data-offset="0" data-spy="scroll" data-target="#nav1" style="padding: 0 10px;height: 100px;overflow: auto;position: relative">
+
+    <section class="sec">
+        <h4 id="html5">HTML5
+            <a href="#" onclick="removeSec(this)">删除此项</a>
+        </h4>
+        <p>万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改（
+            这是一项推荐标准、外语原文：W3C Recommendation、见本处参考资料原文内容：）</p>
+    </section>
+    <section class="sec">
+        <h4 id="bootstrap">Bootstrap</h4>
+        <p>Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和
+            Jacob Thornton合作开发,是一个CSS/HTML框架。目前,Bootstrap最新版本为3.0 。</p>
+    </section>
+
+
+    <h4 id="jQuery">jQuery</h4>
+    <p>JQuery是继prototype之后又一个优秀的Javascript库。它是轻量级的js库 ，它兼容CSS3，还兼
+        容各种浏览器（IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+），jQuery2.0及后续版本将不再支持IE6/7/8浏览器。</p>
+
+    <h4 id="Yui">Yui</h4>
+    <p>The Semantic UI front-end framework is the new kid on the block. Check out our tools and
+        resources to help you make the most out of it.</p>
+
+    <h4 id="ExtJs">ExtJs</h4>
+    <p>自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想
+        法进行渲染，这些也算可以想到的功能。功能丰富，无人能出其右。2</p>
+</div>
+
+<!--滚动监听：更新容器DOM-->
+<!--<section class="sec">-->
+    <!--<h4 id="html">HTML5-->
+                <!--<a href="#" onclick="removeSec(this)">删除此项</a></h4>-->
+    <!--<p>渲染，这些也算可以想到的功能</p>-->
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+//    $("#btn").dropdown();
+//    $("#btn").dropdown('toggle');
+//    $("#dropdown").on('show.bs.dropdown',function(){
+//        alert("在调用show方法时立即触发！");
+//    });
+//    $('#content').scrollspy({
+//        offset:0,
+//        target:'.nav'
+//    });
+//    $(".nav").on('active.bs.scollspy',function(){
+//       alert("新条目被激活");
+//    });
+    function removeSec(e){
+        $(e).parents('.sec').remove();
+        $('#content').scrollspy('refresh');
+    }
+</script>
+</body>
+</html>

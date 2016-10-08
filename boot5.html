@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>图标菜单和下拉菜单</title>
+    <style>
+        .a{
+            height: 50px;
+            width: 200px;
+            border: 1px solid #67b168;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--<i class="glyphicon glyphicon-star"></i>-->
+    <!--<span class="glyphicon glyphicon-remove"></span>-->
+
+    <!--<button class="btn btn-lg btn-info">-->
+        <!--<i class="glyphicon glyphicon-star"></i>-->
+    <!--</button>-->
+    <!--下拉菜单-->
+    <div class="dropdown">
+        <button class="btn btn-default" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Address</a></li>
+        </ul>
+    </div>
+
+    <div class="dropup">
+        <button class="btn btn-default" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Products</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Address</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <button class="btn btn-default" data-toggle="dropdown">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">navbar</li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">People</a></li>
+            <li class="divider"><a href="#">Company</a></li>
+            <li class="disabled"><a href="#">Address</a></li>
+        </ul>
+    </div>
+
+    <div class="btn-toolbar">
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-default">left</button>
+            <button class="btn btn-default">center</button>
+            <button class="btn btn-default">right</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-default">1</button>
+            <button class="btn btn-default">2</button>
+            <button class="btn btn-default">3</button>
+        </div>
+    </div>
+
+
+    <div class="btn-group">
+        <button class="btn btn-default">1</button>
+        <button class="btn btn-default">2</button>
+        <button class="btn btn-default">3</button>
+
+        <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Address</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn-group-vertical">
+        <button class="btn btn-default">1</button>
+        <button class="btn btn-default">2</button>
+        <button class="btn btn-default">3</button>
+    </div>
+
+    <div class="btn-group-justified">
+        <!--或者可以将button改为a-->
+        <div class="btn-group"><button class="btn btn-default">1</button></div>
+        <div class="btn-group"><button class="btn btn-default">2</button></div>
+        <div class="btn-group"><button class="btn btn-default">3</button></div>
+    </div>
+
+    <!--按钮式下拉菜单-->
+    <div class="btn-group dropup">
+        <button class="btn btn-default">下拉菜单</button>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">导航菜单</li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">People</a></li>
+            <li class="divider"><a href="#">Company</a></li>
+            <li><a href="#">Address</a></li>
+        </ul>
+    </div>
+
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

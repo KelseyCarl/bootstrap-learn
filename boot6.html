@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>输入框</title>
+    <style>
+        .a{
+            height: 50px;
+            width: 200px;
+            border: 1px solid #67b168;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control">
+    </div>
+
+    <br>
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-addon">@qq.com</span>
+    </div>
+
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">.00</span>
+    </div>
+
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon"><input type="checkbox"></span>
+        <input type="text" class="form-control">
+    </div>
+
+    <br>
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon"><input type="radio"></span>
+        <input type="text" class="form-control">
+    </div>
+
+    <br>
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <div class="input-group-btn">
+            <button class="btn btn-default">submit</button>
+        </div>
+    </div>
+
+    <br>
+    <div class="input-group">
+        <input type="text" class="form-control">
+        <div class="input-group-btn">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Address</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!--导航组件-->
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">资讯</a></li>
+        <li><a href="#">产品</a></li>
+    </ul>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">资讯</a></li>
+        <li><a href="#">产品</a></li>
+        <li class="disabled"><a href="#">关于</a></li>
+    </ul>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">资讯</a></li>
+        <li class="dropdown">
+            <a  data-toggle="dropdown">
+                下拉菜单
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Address</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul class="nav nav-divider">
+        <li class="active"><a href="#">首页</a></li>
+        <li><a href="#">资讯</a></li>
+        <li><a href="#">产品</a></li>
+    </ul>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

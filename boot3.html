@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>栅格系统</title>
+    <style>
+        .a{
+            height: 50px;
+            border: 1px solid #67b168;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="container a">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+        <!--<div class="col-md-1 a">1</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-md-9 a">9</div>-->
+        <!--<div class="col-md-3 a">3</div>-->
+    <!--</div>-->
+
+    <!--<div class="row">-->
+        <!--<div class="col-md-4 a">4</div>-->
+        <!--<div class="col-md-4 a">4</div>-->
+        <!--<div class="col-md-4 a">4</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="container">
+    <!--<div class="row">-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+        <!--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 a">a</div>-->
+    <!--</div>-->
+    <div class="row"><!--设置偏移，可以使中间留空-->
+        <div class="col-md-8 a">8</div>
+        <div class="col-md-3 col-md-offset-1 a">3</div>
+    </div>
+
+    <div class="row"><!--嵌套使用，满格也为12列-->
+        <div class="col-md-9 a" style="padding: 0">
+            <div class="col-md-8 a">1-8</div>
+            <div class="col-md-4 a">9-12</div>
+        </div>
+        <div class="col-md-3 a">3</div>
+    </div>
+
+    <div class="row"><!--两列位置交换，push向左移动，pull向右移动-->
+        <div class="col-md-9 a col-md-push-3">9</div>
+        <div class="col-md-3 a col-md-pull-9">3</div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
